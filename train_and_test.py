@@ -68,9 +68,9 @@ test_acc = correct / total
 print("Total number of parameters:", sum(p.numel() for p in model.parameters()))
 print("Accuracy:", test_acc)
 # Model validation checks
-assert sum(p.numel() for p in model.parameters()) < 100000, "Model has more than 100,000 parameters"
+assert sum(p.numel() for p in model.parameters()) < 25000, "Model has more than 100,000 parameters"
 assert model.fc3.out_features == 10, "Model output shape is incorrect"
-assert test_acc > 0.80, "Model accuracy is less than 80%"
+assert test_acc > 0.95, "Model accuracy is less than 80%"
 
 # Create the models directory if it doesn't exist
 os.makedirs('models', exist_ok=True)
