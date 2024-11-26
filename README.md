@@ -73,11 +73,9 @@ The project includes a GitHub Actions workflow (`.github/workflows/ci-cd.yml`) t
 
 The model is validated to ensure:
 
-- It has fewer than 100,000 parameters.
+- It has fewer than 25,000 parameters.
 - It accepts 28x28 input images.
 - It outputs 10 classes.
-- It achieves an accuracy of more than 80% on the test dataset.
+- It achieves an accuracy of more than 95% on the test dataset.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
